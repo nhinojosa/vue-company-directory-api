@@ -35,7 +35,7 @@
 <template>
   <div class="card" @click="selectCard">
     <div class="card-image">
-      <img :src="faker.internet.avatar()" alt="" srcset="" />
+      <img :src="faker.image.url()" alt="" srcset="" />
     </div>
     <div class="card-details">
       <p class="card-details-name">{{ props.employee.name }}</p>
