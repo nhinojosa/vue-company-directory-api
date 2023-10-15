@@ -3,12 +3,12 @@ import { useAuth } from '@/composables/useAuth'
 const {isAuthenticated} = useAuth()
 import MainPage from '@/components/MainPage.vue'
 import LoginPage from '@/components/LoginPage.vue'
-import SettingsPage from '@/components/SettingsPage.vue'
+import SettingsPage from '@/components/settingsPage.vue'
 import NotFound from '@/components/NotFound.vue'
 import HomePage from '@/views/HomePage.vue'
 
 const routes = [
-  { path: '/vue-company-directory/', name: 'Home', component: MainPage },
+  { path: '/vue-company-directory-api/', name: 'Home', component: MainPage },
   { path: '/login', name: 'Login', component: LoginPage },
   { path: '/settings', name: 'Settings', component: SettingsPage, meta: {requiresAuth: true} },
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
